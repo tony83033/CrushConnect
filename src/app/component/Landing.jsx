@@ -1,4 +1,6 @@
+"use client"
 import React from 'react'
+import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 const Landing = () => {
   return (
@@ -18,8 +20,8 @@ const Landing = () => {
             will know except you.
           </p>
           <div className="flex justify-center space-x-4">
-          <Button className="bg-white font-bold text-[#9b30ff] hover:bg-gray-100">Sign Up</Button>
-          <Button className="bg-white font-bold text-[#9b30ff] hover:bg-gray-100">Log In</Button>
+          <Link href="/sign" className="bg-white p-2 rounded-lg font-bold text-[#9b30ff] hover:bg-gray-100">Sign Up</Link>
+          <Link href="/login" className="bg-white p-2 rounded-lg font-bold text-[#9b30ff] hover:bg-gray-100">Log In</Link>
           </div>
         </div>
       </div>
